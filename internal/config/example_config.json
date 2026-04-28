@@ -1,0 +1,6 @@
+{
+  "allowed_ports": [22, 80, 443, 8080],
+  "scan_interval": "5s",
+  "log_level": "info",
+  "alert_on_conflict": true
+}
