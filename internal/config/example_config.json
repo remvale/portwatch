@@ -1,6 +1,15 @@
 {
-  "allowed_ports": [22, 80, 443, 8080],
   "scan_interval": "5s",
+  "allowed_ports": [22, 80, 443],
   "log_level": "info",
-  "alert_on_conflict": true
+  "webhook_url": "https://hooks.example.com/portwatch",
+  "email": {
+    "enabled": false,
+    "smtp_host": "smtp.example.com",
+    "smtp_port": 587,
+    "username": "portwatch@example.com",
+    "password": "secret",
+    "from": "portwatch@example.com",
+    "to": ["admin@example.com"]
+  }
 }
